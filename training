@@ -1,0 +1,50 @@
+//exercice1
+var student1= {
+    firstName:"meriem",
+    lastName :"fekrache",
+    favoritemovie:"five feet apart",
+    favoritecolor:"black",
+    discord:"miku#2525",
+}
+var student2= {
+    firstName:"tita",
+    lastName :"arous",
+    favoritemovie :"cruella",
+    favoritecolor :"bleu",
+    discord :"tita#5314",
+}
+function check(student1,student2)
+{
+    var result;
+    for (var key in student2) 
+    { 
+        if ( student1[key] !== student2[key])
+        {
+            result=false;
+        }
+        else{ result=true}
+     return result ;
+    }
+}
+console.log(check(student1,student2));
+
+//exercice2
+var array1=[1,2,3],
+    array2=[100,2,1,10];
+function difference(array1,array2)
+{
+    var common=[],k;
+for (var i=0; i <array1.length;i++)
+{
+    for(var j=0;j<array2.length;j++)
+    {
+        if (array1[i]==array2[j])
+        {
+            common.push(array1[i]);
+
+        }
+    }
+}
+return common;
+}
+console.log(difference(array1,array2));
